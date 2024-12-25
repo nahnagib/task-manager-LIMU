@@ -1,0 +1,285 @@
+
+body, h1, h2, h3, p, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #faf3e0; 
+    color: #333; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+section {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    margin: 20px;
+}
+
+
+.landing {
+    text-align: center;
+}
+
+.landing .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #4caf50; 
+    font-weight: 700;
+}
+
+.landing .content p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.landing .content button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 10px 10px 10px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.landing .content button:hover,
+.landing .content button:focus {
+    background-color: #0056b3;
+}
+
+.landing .content button:active {
+    transform: scale(0.98); 
+}
+
+.landing .content button:disabled {
+    background-color: #b0b0b0;
+    cursor: not-allowed;
+}
+
+
+.task-panel {
+    text-align: left;
+}
+
+.task-panel h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.task-panel .task-input {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.task-panel .task-input input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.task-panel .task-input input:focus {
+    border-color: #007bff;
+}
+
+.task-panel .task-input button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-panel .task-input button:hover,
+.task-panel .task-input button:focus {
+    background-color: #218838;
+}
+
+.task-panel ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-panel li {
+    padding: 12px;
+    background-color: #f8f9fa;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.task-panel li:hover {
+    background-color: #f1f1f1;
+}
+
+.task-panel li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-panel li input[type="checkbox"] {
+    margin-right: 12px;
+}
+
+.task-panel .delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-panel .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.task-panel .back-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ffc107;
+    color: #212529;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-panel .back-button:hover,
+.task-panel .back-button:focus {
+    background-color: #e0a800;
+}
+
+/* Admin Panel */
+.admin-panel h2 {
+    color: #ff5722;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.admin-panel h3 {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.admin-panel label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1rem;
+}
+
+.admin-panel input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.admin-panel input:focus {
+    border-color: #007bff;
+}
+
+.admin-panel button {
+    padding: 12px 25px;
+    font-weight: bold;
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-panel button:hover,
+.admin-panel button:focus {
+    background-color: #e0a800;
+}
+
+
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+    }
+
+    .landing .content h1 {
+        font-size: 2rem;
+    }
+
+    .landing .content p {
+        font-size: 1rem;
+    }
+
+    .task-panel .task-input {
+        flex-direction: column;
+    }
+
+    .task-panel .task-input input,
+    .task-panel .task-input button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+.update-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin-top: 20px; 
+  }
+  
+  
+  .update-btn:hover {
+    background-color: #45a049; 
+  }
+  
+  
+  .update-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(72, 203, 88, 0.7); 
+  }
+  
+
+
+  

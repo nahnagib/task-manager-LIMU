@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  <!-- Landing Page -->
+  <section class="landing" id="landing">
+    <div class="content">
+      <h1 id="landing-title">Task Management System</h1>
+      <p id="landing-subtitle">Organize your tasks efficiently and effectively.</p>
+      <button id="login-user-btn">Login as User</button>
+      <button id="login-admin-btn">Login as Admin</button>
+      <button id="logout-btn" style="display: none;">Logout</button>
+    </div>
+  </section>
+
+  <!-- Task Management Panel for Users -->
+  <section class="task-panel" id="task-panel" style="display: none;">
+    <div class="task-container">
+      <h2>User Task Management</h2>
+      <div class="task-input">
+        <input type="text" id="task-title" placeholder="Task Title">
+        <input type="text" id="task-desc" placeholder="Task Description (optional)">
+        <button id="add-task-btn">Add Task</button>
+      </div>
+      <ul id="task-list"></ul>
+      <button id="back-to-landing-btn" class="back-button">Back to Landing Page</button>
+    </div>
+  </section>
+
+  <!-- Admin Panel -->
+  <section class="admin-panel" id="admin-panel" style="display: none;">
+    <div class="admin-container">
+      <h2>Admin Panel</h2>
+      <div>
+        <h3>Landing Page Content</h3>
+        <label for="landing-title-input">Title:</label>
+        <input type="text" id="landing-title-input" placeholder="Landing Page Title">
+        <label for="landing-subtitle-input">Subtitle:</label>
+        <input type="text" id="landing-subtitle-input" placeholder="Landing Page Subtitle">
+      </div>
+      <button id="back-to-landing-admin-btn" class="back-button">Back to Landing Page</button>
+      <button id="update-btn" class="update-btn">Update</button> <!-- Update Button -->
+    </div>
+  </section>
+  
+  
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
