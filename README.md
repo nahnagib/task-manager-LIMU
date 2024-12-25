@@ -20,7 +20,7 @@ This project was developed for academic purposes only, as part of our coursework
 
 ## Authors:
 - Nahla Nagib Burweiss ([GitHub Profile](https://github.com/nahnagib))  
-- Raghad Mohammed Boshiha ([GitHub Profile](https://github.com/raghad-boshiha))
+- Raghad Mohammed Boshiha ([GitHub Profile]([https://github.com/RaghadB03]))
 
 ## How to Use:
 1. Clone the repository or download the project files.
